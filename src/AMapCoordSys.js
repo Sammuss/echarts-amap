@@ -107,6 +107,7 @@ AMapCoordSys.create = function (ecModel, api) {
 
     amapModel.coordinateSystem = amapCoordSys;
     layer.show();
+    layer.setzIndex(999);
   });
 
   ecModel.eachSeries(function (seriesModel) {
